@@ -1,0 +1,56 @@
+#!/usr/bin/make -f
+#
+# ﻿   Kernel Simulator  Copyright (C) 2018-2021  EoflaOE
+# 
+#    Kernel Simulator is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    Kernel Simulator is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+# 
+
+%:
+	dh $@
+
+build:
+	# Restore every package from solution and build the app
+	mkdir debian/homedir
+	echo `pwd`"/debian/homedir"
+	HOME=`pwd`"/debian/homedir" msbuild -t:restore
+	msbuild "Kernel Simulator.sln"
+	# Remove unnecessary things generated (KS nupkgs)
+	IFS="|"; for f in `find -regex ".*\.+[^.]*\.+[^.]*\.+.*nupkg" | awk '{printf "%s|", $$0}'`; do rm $$f; done; IFS=" "
+
+binary:
+	# Prepare directories
+	mkdir -p debian/kernel-simulator/usr/bin
+	mkdir -p debian/kernel-simulator/usr/lib/ks
+	# Copy required files to their directories
+	cp -r "Kernel Simulator/KSBuild/." "debian/kernel-simulator/usr/lib/ks"
+	cp "debian/ks" "debian/kernel-simulator/usr/bin/ks"
+	# Set up permissions
+	chmod 755 "debian/kernel-simulator/usr/bin/ks"
+	chmod -R 644 debian/kernel-simulator/usr/lib/ks/.
+	chmod 755 debian/kernel-simulator/usr/lib
+	chmod 755 debian/kernel-simulator/usr/lib/ks
+	# Set up owners
+	chown -R root:root debian/kernel-simulator/usr/bin
+	chown -R root:root debian/kernel-simulator/usr/lib
+	# Install everything
+	dh_install
+	dh_installchangelogs
+	dh_installman
+	# Compress changelogs
+	dh_compress
+	# Generate control file
+	dh_gencontrol
+	# Make package
+	dh_builddeb
+
