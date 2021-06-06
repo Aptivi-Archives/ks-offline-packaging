@@ -23,8 +23,8 @@ build:
 	# Restore every package from solution and build the app
 	mkdir debian/homedir
 	echo `pwd`"/debian/homedir"
-	HOME=`pwd`"/debian/homedir" msbuild -t:restore
-	msbuild "Kernel Simulator.sln"
+	HOME=`pwd`"/debian/homedir" msbuild "Kernel-Simulator/Kernel Simulator.sln" -t:restore
+	msbuild "Kernel-Simulator/Kernel Simulator.sln"
 	# Remove unnecessary things generated (KS nupkgs)
 	IFS="|"; for f in `find -regex ".*\.+[^.]*\.+[^.]*\.+.*nupkg" | awk '{printf "%s|", $$0}'`; do rm $$f; done; IFS=" "
 
@@ -33,7 +33,7 @@ binary:
 	mkdir -p debian/kernel-simulator/usr/bin
 	mkdir -p debian/kernel-simulator/usr/lib/ks
 	# Copy required files to their directories
-	cp -r "Kernel Simulator/KSBuild/." "debian/kernel-simulator/usr/lib/ks"
+	cp -r "Kernel-Simulator/Kernel Simulator/KSBuild/." "debian/kernel-simulator/usr/lib/ks"
 	cp "debian/ks" "debian/kernel-simulator/usr/bin/ks"
 	# Set up permissions
 	chmod 755 "debian/kernel-simulator/usr/bin/ks"
