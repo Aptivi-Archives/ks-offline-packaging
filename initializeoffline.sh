@@ -43,10 +43,20 @@ cp ../offline/NuGet.config .
 
 # Cleaning up
 echo "- Cleaning up..."
-echo "  - rm -R KSBuild"
-rm -R KSBuild
-echo "  - rm -R obj"
-rm -R obj
+echo "  - rm -R \"Kernel Simulator/KSBuild\""
+rm -R "Kernel Simulator/KSBuild"
+echo "  - rm -R \"Kernel Simulator/obj\""
+rm -R "Kernel Simulator/obj"
+echo "  - rm -R \"KSConverter/obj\""
+rm -R "KSConverter/obj"
+echo "  - rm -R \"KSJsonifyLocales/obj\""
+rm -R "KSJsonifyLocales/obj"
+echo "  - rm -R \"KSTests/KSTest\""
+rm -R "KSTests/KSTest"
+echo "  - rm -R \"KSTests/obj\""
+rm -R "KSTests/obj"
+echo "  - rm -R \"nuget\""
+rm -R "nuget"
 
 echo "- Build using \"msbuild\" from the \"Kernel-Simulator\" directory."
 echo "- For Launchpad PPAs and general Ubuntu package builds, change \"preview\" in \"debian/changelog\" to \"focal\" or any Ubuntu codename."
