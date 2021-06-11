@@ -35,8 +35,10 @@ binary:
 	# Copy required files to their directories
 	cp -r "Kernel-Simulator/Kernel Simulator/KSBuild/." "debian/kernel-simulator/usr/lib/ks"
 	cp "debian/ks" "debian/kernel-simulator/usr/bin/ks"
+	cp "debian/ks-converter" "debian/kernel-simulator/usr/bin/ks-converter"
 	# Set up permissions
 	chmod 755 "debian/kernel-simulator/usr/bin/ks"
+	chmod 755 "debian/kernel-simulator/usr/bin/ks-converter"
 	chmod -R 644 debian/kernel-simulator/usr/lib/ks/.
 	chmod 755 debian/kernel-simulator/usr/lib
 	chmod 755 debian/kernel-simulator/usr/lib/ks
