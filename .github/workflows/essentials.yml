@@ -30,4 +30,3 @@ jobs:
           path: |
             Essentials.tar.xz
             offline/.dotnet
-            linux-packaging-msbuild/artifacts
