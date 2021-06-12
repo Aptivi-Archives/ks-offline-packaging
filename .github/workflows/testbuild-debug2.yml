@@ -14,8 +14,9 @@ jobs:
 
       - name: Install required packages
         run: |
+          sudo add-apt-repository ppa:eofla/msbuild
           sudo apt update
-          sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev
+          sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev msbuild msbuild-roslyn mono-devel mono-vbnc libmono-microsoft-visualbasic10.0-cil inxi libcpanel-json-xs-perl
         
       - name: Initialize offline package
         run: |
@@ -28,8 +29,9 @@ jobs:
         
       - name: Try to build
         run: |
-          cd linux-packaging-msbuild
-          sudo ip netns exec no-net ./eng/cibuild_bootstrapped_msbuild.sh --host_type mono --configuration Release --skip_tests /p:DisableNerdbankVersioning=true
+          cd Kernel-Simulator
+          sudo ip netns exec no-net msbuild -t:restore
+          sudo ip netns exec no-net msbuild
           
       - name: Setup tmate session for debug failure
         if: ${{ failure() }}
