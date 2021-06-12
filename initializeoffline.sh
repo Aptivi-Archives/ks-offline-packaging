@@ -43,8 +43,6 @@ cp ../offline/NuGet.config .
 
 # Cleaning up
 echo "- Cleaning up..."
-echo "  - rm -R KSBuild"
-rm -R KSBuild
 echo "  - rm -R obj"
 rm -R obj
 
