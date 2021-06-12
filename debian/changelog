@@ -1,3 +1,11 @@
+kernel-simulator (0.0.16.2) focal; urgency=medium
+
+  * Fixed NullReferenceException when loading a mod command if one of the loaded mods didn't have any command
+  * Added support for .message MOTD for FTP
+  * Fader and Wipe now exit instantly
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Sat, 12 Jun 2021 16:36:35 +0300
+
 kernel-simulator (0.0.15.8) focal; urgency=medium
 
   * Fixed NullReferenceException when trying to get symlink target
