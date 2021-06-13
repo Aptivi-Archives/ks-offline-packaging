@@ -23,7 +23,7 @@ jobs:
           sudo add-apt-repository ppa:eofla/msbuild
           sudo apt update
           sudo apt purge mono-roslyn msbuild-sdkresolver msbuild-libhostfxr
-          sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev msbuild msbuild-roslyn mono-devel mono-vbnc libmono-microsoft-visualbasic10.0-cil inxi libcpanel-json-xs-perl
+          sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev msbuild msbuild-roslyn mono-vbnc libmono-microsoft-visualbasic10.0-cil inxi libcpanel-json-xs-perl
         
       - name: Initialize offline package
         run: |
