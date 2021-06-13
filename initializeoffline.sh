@@ -43,8 +43,8 @@ cp ../offline/NuGet.config .
 
 # Cleaning up
 echo "- Cleaning up..."
-echo "  - rm -R obj"
-rm -R obj
+echo "  - rm -R nuget"
+rm -R nuget
 
 echo "- Build using \"msbuild\" from the \"Kernel-Simulator\" directory."
 echo "- For Launchpad PPAs and general Ubuntu package builds, change \"preview\" in \"debian/changelog\" to \"focal\" or any Ubuntu codename."
