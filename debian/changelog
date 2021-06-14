@@ -1,3 +1,10 @@
+kernel-simulator (0.0.16.3) focal; urgency=medium
+
+  * Fixed DLL-based screensavers not loading
+  * Fixed external programs (ffmpeg, ...) not using current working directory
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Mon, 14 Jun 2021 17:47:51 +0300
+
 kernel-simulator (0.0.16.2) focal; urgency=medium
 
   * Fixed NullReferenceException when loading a mod command if one of the loaded mods didn't have any command
