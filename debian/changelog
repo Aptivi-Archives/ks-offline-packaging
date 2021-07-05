@@ -1,3 +1,38 @@
+kernel-simulator (0.0.17.0) focal; urgency=medium
+
+  * Fixed the sudden "Invalid path" when trying to execute a non-existent mod/alias that contains the space in their command.
+  * Added FaderBack
+  * Fade-ins in Fader and FaderBack are now smoother
+  * WebAlerts are now handled in mail shell
+  * Extended information in modinfo
+  * Added custom prompt styles for RSS, Text Edit, and ZIP Shell
+  * Improvements regarding parsing RSS feeds
+  * General improvements and bug fixes
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Mon, 05 Jul 2021 14:29:11 +0300
+
+kernel-simulator (0.0.16.4) focal; urgency=medium
+
+  * Added support for spaces in commands for mods and aliases
+  * Better mod conflict detection
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Thu, 17 Jun 2021 13:59:59 +0300
+
+kernel-simulator (0.0.16.3) focal; urgency=medium
+
+  * Fixed DLL-based screensavers not loading
+  * Fixed external programs (ffmpeg, ...) not using current working directory
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Mon, 14 Jun 2021 17:47:51 +0300
+
+kernel-simulator (0.0.16.2) focal; urgency=medium
+
+  * Fixed NullReferenceException when loading a mod command if one of the loaded mods didn't have any command
+  * Added support for .message MOTD for FTP
+  * Fader and Wipe now exit instantly
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Sat, 12 Jun 2021 16:36:35 +0300
+
 kernel-simulator (0.0.16.0) focal; urgency=medium
 
   * Check out github.com/EoflaOE/Kernel-Simulator/wiki/History-of-KS#ks-00160-6122021

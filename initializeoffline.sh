@@ -41,11 +41,6 @@ echo "- Copying NuGet.config..."
 echo "  - cp ../offline/NuGet.config ."
 cp ../offline/NuGet.config .
 
-# Cleaning up
-echo "- Cleaning up..."
-echo "  - rm -R obj"
-rm -R obj
-
 echo "- Build using \"msbuild\" from the \"Kernel-Simulator\" directory."
 echo "- For Launchpad PPAs and general Ubuntu package builds, change \"preview\" in \"debian/changelog\" to \"focal\" or any Ubuntu codename."
 echo "- You may want to run \"dch -U\" to sign your custom KS package changelog."
