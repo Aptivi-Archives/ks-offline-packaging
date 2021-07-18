@@ -49,6 +49,7 @@ binary:
 	dh_install
 	dh_installchangelogs
 	dh_installman
+	dh_installmenu
 	# Compress changelogs
 	dh_compress
 	# Generate control file

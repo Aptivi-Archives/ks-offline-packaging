@@ -1,3 +1,22 @@
+kernel-simulator (0.0.17.1) focal; urgency=medium
+
+  * Better handling for empty folders in List
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Sun, 18 Jul 2021 14:18:50 +0300
+
+kernel-simulator (0.0.17.0) focal; urgency=medium
+
+  * Fixed the sudden "Invalid path" when trying to execute a non-existent mod/alias that contains the space in their command.
+  * Added FaderBack
+  * Fade-ins in Fader and FaderBack are now smoother
+  * WebAlerts are now handled in mail shell
+  * Extended information in modinfo
+  * Added custom prompt styles for RSS, Text Edit, and ZIP Shell
+  * Improvements regarding parsing RSS feeds
+  * General improvements and bug fixes
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Mon, 05 Jul 2021 14:29:11 +0300
+
 kernel-simulator (0.0.16.4) focal; urgency=medium
 
   * Added support for spaces in commands for mods and aliases
