@@ -1,3 +1,11 @@
+kernel-simulator (0.0.17.2) focal; urgency=medium
+
+  * Added support for complete string formatting in console writers
+    - Note that this change is a backport from the upcoming 0.0.18.0
+  * Enhanced a default for Typo
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Sun, 25 Jul 2021 17:23:18 +0300
+
 kernel-simulator (0.0.17.1-0ppa1) focal; urgency=medium
 
   * Fixed menu entry not working
