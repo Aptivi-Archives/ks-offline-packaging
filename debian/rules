@@ -35,7 +35,9 @@ binary:
 	# Copy required files to their directories
 	cp -r "Kernel-Simulator/Kernel Simulator/KSBuild/." "debian/kernel-simulator/usr/lib/ks"
 	cp "debian/ks" "debian/kernel-simulator/usr/bin/ks"
+	cp "debian/ks.desktop" "debian/kernel-simulator/usr/share/applications"
 	cp "debian/ks-converter" "debian/kernel-simulator/usr/bin/ks-converter"
+	cp "Kernel-Simulator/Kernel Simulator/OfficialAppIcon-KernelSimulator-256.png" "debian/kernel-simulator/usr/lib/ks/ks.png"
 	# Set up permissions
 	chmod 755 "debian/kernel-simulator/usr/bin/ks"
 	chmod 755 "debian/kernel-simulator/usr/bin/ks-converter"

@@ -1,3 +1,9 @@
+kernel-simulator (0.0.17.2-0ppa1) focal; urgency=medium
+
+  * A .desktop file
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Sat, 31 Jul 2021 18:32:21 +0300
+
 kernel-simulator (0.0.17.2) focal; urgency=medium
 
   * Added support for complete string formatting in console writers
