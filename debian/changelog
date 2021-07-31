@@ -1,3 +1,9 @@
+kernel-simulator (0.0.17.2-0ppa2) focal; urgency=medium
+
+  * Made a .desktop file
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Sat, 31 Jul 2021 18:49:16 +0300
+
 kernel-simulator (0.0.17.2-0ppa1) focal; urgency=medium
 
   * A .desktop file
