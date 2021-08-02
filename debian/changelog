@@ -1,3 +1,21 @@
+kernel-simulator (0.0.18.0) focal; urgency=medium
+
+  * 1. Added SHA384 support
+  * Added support for output files in `sumfile`
+  * Now `No help for command <cmd>` shows up on all shells
+  * Added support for complete string formatting in console writers
+  * Added new commands
+  * Flipped the date and time on upper right corner
+  * Added the GetConfigCategory and SetConfigValueAndWrite APIs
+  * Added beats per minute implementation to disco
+  * Added BeatFader screensaver
+  * Added new placeholders
+  * Custom startup banner support
+  * Added `/clear` to clear the string variable in Settings
+  * General improvements and bug fixes
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Mon, 02 Aug 2021 21:01:40 +0300
+
 kernel-simulator (0.0.17.2-0ppa2) focal; urgency=medium
 
   * Made a .desktop file
