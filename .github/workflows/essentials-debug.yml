@@ -19,7 +19,11 @@ jobs:
           sudo apt purge mono-roslyn msbuild-sdkresolver msbuild-libhostfxr
           sudo apt purge mono-*
           sudo apt autoremove
+<<<<<<< HEAD
           sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev msbuild msbuild-roslyn mono-devel mono-vbnc libmono-microsoft-visualbasic10.0-cil inxi libcpanel-json-xs-perl libmono-2.0-1 libmono-profiler mono-4.0-service
+=======
+          sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev msbuild msbuild-roslyn mono-vbnc libmono-microsoft-visualbasic10.0-cil inxi libcpanel-json-xs-perl
+>>>>>>> servicing
         
       - name: Initialize offline package
         run: |

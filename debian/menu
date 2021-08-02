@@ -1,3 +1,6 @@
-?package(ks):needs=X11|wm section="Applications/Utilities" \
+?package(kernel-simulator):needs=text section="Applications/Emulators" \
   title="Kernel Simulator" \
-  command="x-terminal-emulator -e \\"bash -c '/usr/bin/ks'\\""
+  command="/usr/bin/ks"
+?package(kernel-simulator):needs=text section="Applications/Utilities" \
+  title="Kernel Simulator Converter" \
+  command="/usr/bin/ks-converter"
