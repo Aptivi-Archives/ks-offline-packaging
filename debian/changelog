@@ -1,3 +1,10 @@
+kernel-simulator (0.0.18.1) focal; urgency=medium
+
+  * Fixed BeatFader taking time to exit
+  * Fixed extra newline in separator if location is two lines lower
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Mon, 09 Aug 2021 14:46:15 +0300
+
 kernel-simulator (0.0.18.0) focal; urgency=medium
 
   * 1. Added SHA384 support
