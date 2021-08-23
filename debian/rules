@@ -24,7 +24,7 @@ build:
 	mkdir debian/homedir
 	echo `pwd`"/debian/homedir"
 	HOME=`pwd`"/debian/homedir" msbuild "Kernel-Simulator/Kernel Simulator.sln" -t:restore
-	msbuild "Kernel-Simulator/Kernel Simulator.sln"
+	msbuild "Kernel-Simulator/Kernel Simulator.sln" -p:Configuration=Release
 	# Remove unnecessary things generated (KS nupkgs)
 	IFS="|"; for f in `find -regex ".*\.+[^.]*\.+[^.]*\.+.*nupkg" | awk '{printf "%s|", $$0}'`; do rm $$f; done; IFS=" "
 

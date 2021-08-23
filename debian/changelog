@@ -1,3 +1,22 @@
+kernel-simulator (0.0.19.0) focal; urgency=medium
+
+  * Added folder download/upload to FTP
+  * Added option to write full color code in ColorWheel
+  * Added JSON minifier
+  * Added optional output support for jsonbeautify/jsonminify
+  * Added the Kazakh and Yoruba languages
+  * Added the Linotypo and Typewriter screensavers
+  * Improvements in Settings
+  * Added reading text files support in supported screensavers (only Linotypo for now)
+  * Added the mod manager
+  * Added missed character support in typo screensavers
+  * Added debugging support to screensaver
+  * Restored Turkish language
+  * Fixed cancellation not working properly in some situations
+  * General improvements and bug fixes
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Sun, 22 Aug 2021 15:30:19 +0300
+
 kernel-simulator (0.0.18.1) focal; urgency=medium
 
   * Fixed BeatFader taking time to exit

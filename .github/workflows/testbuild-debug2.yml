@@ -34,7 +34,7 @@ jobs:
         run: |
           cd Kernel-Simulator
           sudo ip netns exec no-net msbuild -t:restore
-          sudo ip netns exec no-net msbuild
+          sudo ip netns exec no-net msbuild -p:Configuration=Release
           
       - name: Setup tmate session for debug failure
         if: ${{ failure() }}
