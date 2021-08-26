@@ -1,3 +1,11 @@
+kernel-simulator (0.0.19.1) focal; urgency=medium
+
+  * Made a shortcut to KS for Windows systems (Chocolatey)
+  * Added the FlashColor screensaver
+  * Added the Gujarati language
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Thu, 26 Aug 2021 14:54:41 +0300
+
 kernel-simulator (0.0.19.0) focal; urgency=medium
 
   * Added folder download/upload to FTP
