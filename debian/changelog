@@ -1,3 +1,27 @@
+kernel-simulator (0.0.20.0) focal; urgency=medium
+
+  * Added high customization
+  * Added new commands
+  * Added new screensavers
+  * Added new languages
+  * Added new themes
+  * Added notification borders
+  * Added manual page viewer for mods
+  * Added UTC support
+  * Added mod blacklist support
+  * Added support for POP3 (experimental)
+  * Added switches for commands
+  * Updated libraries
+  * Updated the icon for Chocolatey installations
+  * Changed mail command name from `lsmail` to `mail` for relevancy
+  * Removed obsolete commands
+  * Removed AptErrorSim and HackUserFromAD screensavers
+  * Many API changes and improvements
+  * General improvements and bug fixes
+  * And many surprises...
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Sun, 20 Feb 2022 20:22:48 +0200
+
 kernel-simulator (0.0.19.1) focal; urgency=medium
 
   * Made a shortcut to KS for Windows systems (Chocolatey)
