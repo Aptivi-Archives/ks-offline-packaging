@@ -1,3 +1,11 @@
+kernel-simulator (0.0.20.1) focal; urgency=medium
+
+  * Fixed bugs in update facility
+  * Fixed debugger not accepting messages in Linux hosts
+  * General improvements and bug fixes
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Thu, 03 Mar 2022 06:27:21 +0200
+
 kernel-simulator (0.0.20.0) focal; urgency=medium
 
   * Added high customization
