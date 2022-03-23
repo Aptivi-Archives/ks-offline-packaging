@@ -29,12 +29,12 @@ jobs:
         
       - name: Download original source
         run: |
-          wget --output-document=../kernel-simulator_0.0.20.2.orig.tar.xz https://launchpad.net/~eofla/+archive/ubuntu/kernel-sim/+sourcefiles/kernel-simulator/0.0.20.2/kernel-simulator_0.0.20.2.orig.tar.xz
-          tar xf ../kernel-simulator_0.0.20.2.orig.tar.xz ./Kernel-Simulator
+          wget --output-document=../kernel-simulator_0.0.20.3.orig.tar.xz https://launchpad.net/~eofla/+archive/ubuntu/kernel-sim/+sourcefiles/kernel-simulator/0.0.20.3/kernel-simulator_0.0.20.3.orig.tar.xz
+          tar xf ../kernel-simulator_0.0.20.3.orig.tar.xz ./Kernel-Simulator
           mv .github ..
 
       - name: Build source package
         run: debuild -S
         
       - name: Push to Launchpad
-        run: dput ppa:eofla/kernel-sim ../kernel-simulator_0.0.20.2-0ppa1_source.changes
+        run: dput ppa:eofla/kernel-sim ../kernel-simulator_0.0.20.3-0ppa1_source.changes
