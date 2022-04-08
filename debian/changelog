@@ -1,3 +1,9 @@
+kernel-simulator (0.0.20.4) focal; urgency=medium
+
+  * Updated debug symbol update link
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Fri, 08 Apr 2022 08:22:27 +0300
+
 kernel-simulator (0.0.20.3) focal; urgency=medium
 
   * General improvements and bug fixes
