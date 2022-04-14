@@ -1,3 +1,9 @@
+kernel-simulator (0.0.20.5) focal; urgency=medium
+
+  * Fixed race condition in kernel threads causing screensavers to stop with an error
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Thu, 14 Apr 2022 08:27:10 +0300
+
 kernel-simulator (0.0.20.4) focal; urgency=medium
 
   * Updated debug symbol update link
