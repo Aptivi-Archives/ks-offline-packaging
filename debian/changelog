@@ -1,3 +1,16 @@
+kernel-simulator (0.0.21.0) jammy; urgency=medium
+
+  * Updated libraries
+  * Added new screensavers
+  * Added custom notifications API
+  * Added hex shell
+  * You can select feed by country!
+  * Line parsing behavior should be consistent in all shells
+  * MathBee is now Solver
+  * General improvements and bug fixes
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Wed, 27 Apr 2022 07:33:57 +0300
+
 kernel-simulator (0.0.20.5) focal; urgency=medium
 
   * Fixed race condition in kernel threads causing screensavers to stop with an error
