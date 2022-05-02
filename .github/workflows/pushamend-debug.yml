@@ -29,15 +29,15 @@ jobs:
         
       - name: Download original source
         run: |
-          wget --output-document=../kernel-simulator_0.0.21.0.orig.tar.xz https://launchpad.net/~eofla/+archive/ubuntu/kernel-sim/+sourcefiles/kernel-simulator/0.0.21.0/kernel-simulator_0.0.21.0.orig.tar.xz
-          tar xf ../kernel-simulator_0.0.21.0.orig.tar.xz ./Kernel-Simulator
+          wget --output-document=../kernel-simulator_0.0.21.1.orig.tar.xz https://launchpad.net/~eofla/+archive/ubuntu/kernel-sim/+sourcefiles/kernel-simulator/0.0.21.1/kernel-simulator_0.0.21.1.orig.tar.xz
+          tar xf ../kernel-simulator_0.0.21.1.orig.tar.xz ./Kernel-Simulator
           mv .github ..
 
       - name: Build source package
         run: debuild -S
         
       - name: Push to Launchpad
-        run: dput ppa:eofla/kernel-sim ../kernel-simulator_0.0.21.0-0ppa1_source.changes
+        run: dput ppa:eofla/kernel-sim ../kernel-simulator_0.0.21.1-0ppa1_source.changes
           
       - name: Setup tmate session for debug failure
         if: ${{ failure() }}

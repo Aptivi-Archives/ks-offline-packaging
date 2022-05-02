@@ -1,3 +1,10 @@
+kernel-simulator (0.0.21.1) jammy; urgency=medium
+
+  * Improvements to the RSS feed selector
+  * General improvements and bug fixes
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Mon, 02 May 2022 09:31:20 +0300
+
 kernel-simulator (0.0.21.0) jammy; urgency=medium
 
   * Updated libraries
