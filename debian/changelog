@@ -1,3 +1,9 @@
+kernel-simulator (0.0.21.2) jammy; urgency=medium
+
+  * Fixed fatal crash on startup on ARM devices
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Wed, 04 May 2022 11:35:08 +0300
+
 kernel-simulator (0.0.21.1) jammy; urgency=medium
 
   * Improvements to the RSS feed selector
