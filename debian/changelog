@@ -1,3 +1,12 @@
+kernel-simulator (0.0.21.3) jammy; urgency=medium
+
+  * Fixed crash on startup in some Linux systems
+  * Fixed crash on startup when a non-screensaver file is encountered
+  * Fixed crash on startup if there is a kernel crash during boot
+  * Fixed `hwinfo` not displaying hardware information
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Sun, 08 May 2022 07:56:19 +0300
+
 kernel-simulator (0.0.21.2) jammy; urgency=medium
 
   * Fixed fatal crash on startup on ARM devices
