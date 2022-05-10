@@ -14,8 +14,8 @@ fi
 echo "- Restoring packages..."
 echo "  - cd Kernel-Simulator"
 cd Kernel-Simulator
-echo "  - HOME=`pwd`/nuget msbuild -t:restore"
-HOME=`pwd`/nuget msbuild -t:restore
+echo "  - HOME=`pwd`/nuget msbuild \"Kernel Simulator.sln\" -t:restore"
+HOME=`pwd`/nuget msbuild "Kernel Simulator.sln" -t:restore
 if [ "$?" -ne 0 ]; then
 	exit $?
 fi
