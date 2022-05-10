@@ -16,6 +16,7 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 # 
 
+# TODO: Overhaul this with override_dh_auto_build and override_dh_auto_install
 %:
 	dh $@
 
