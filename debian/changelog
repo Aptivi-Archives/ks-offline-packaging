@@ -1,3 +1,9 @@
+kernel-simulator (0.0.22.3) jammy; urgency=medium
+
+  * Compatibility improvements regarding .NET 6.0
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Wed, 15 Jun 2022 16:36:25 +0300
+
 kernel-simulator (0.0.22.2) jammy; urgency=medium
 
   * Fixed custom screensavers breaking when
