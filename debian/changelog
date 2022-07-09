@@ -1,3 +1,9 @@
+kernel-simulator (0.0.22.5) jammy; urgency=medium
+
+  * Backported fixes
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Sat, 09 Jul 2022 11:19:11 +0300
+
 kernel-simulator (0.0.22.4) jammy; urgency=medium
 
   * General improvements and bug fixes
