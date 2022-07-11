@@ -1,3 +1,18 @@
+kernel-simulator (0.0.23.0) jammy; urgency=medium
+
+  * Updated libraries
+  * Added "No APM" simulator
+  * Improved name generation process
+  * No more stack overflow when double panic fails
+  * Added new screensavers (Glitch, FallingLine)
+  * Added new language (Gangsta, Playa - pla)
+  * Added new splash (Fader)
+  * Screensaver improvements
+  * General compatibility improvements for .NET 6.0
+  * General improvements and bug fixes
+
+ -- EoflaOE <eofla@devkit4>  Mon, 11 Jul 2022 10:40:22 +0300
+
 kernel-simulator (0.0.22.5) jammy; urgency=medium
 
   * Backported fixes
