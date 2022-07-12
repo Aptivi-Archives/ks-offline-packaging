@@ -11,7 +11,7 @@ kernel-simulator (0.0.23.0) jammy; urgency=medium
   * General compatibility improvements for .NET 6.0
   * General improvements and bug fixes
 
- -- EoflaOE <eofla@devkit4>  Mon, 11 Jul 2022 10:40:22 +0300
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Mon, 11 Jul 2022 10:40:22 +0300
 
 kernel-simulator (0.0.22.5) jammy; urgency=medium
 
