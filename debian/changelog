@@ -1,3 +1,9 @@
+kernel-simulator (0.0.23.1) jammy; urgency=medium
+
+  * Fixed crash on startup due to an Inxi.NET bug
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Tue, 12 Jul 2022 08:58:39 +0300
+
 kernel-simulator (0.0.23.0) jammy; urgency=medium
 
   * Updated libraries
