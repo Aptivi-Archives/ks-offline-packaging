@@ -36,12 +36,12 @@ jobs:
         run: |
           mv debian ..
           mv .github ..
-          tar cfv ../kernel-simulator_0.0.23.1.orig.tar .
-          xz -9 ../kernel-simulator_0.0.23.1.orig.tar
+          tar cfv ../kernel-simulator_0.0.23.2.orig.tar .
+          xz -9 ../kernel-simulator_0.0.23.2.orig.tar
           mv ../debian .
 
       - name: Build source package
         run: debuild -S -sa
         
       - name: Push to Launchpad
-        run: dput ppa:eofla/kernel-sim ../kernel-simulator_0.0.23.1_source.changes
+        run: dput ppa:eofla/kernel-sim ../kernel-simulator_0.0.23.2_source.changes

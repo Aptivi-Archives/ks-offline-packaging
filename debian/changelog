@@ -1,3 +1,10 @@
+kernel-simulator (0.0.23.2) jammy; urgency=medium
+
+  * Fixed dictionary defining only one meaning for words like `fine`
+  * Fixed file handles being stuck open
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Wed, 13 Jul 2022 10:50:13 +0300
+
 kernel-simulator (0.0.23.1) jammy; urgency=medium
 
   * Fixed crash on startup due to an Inxi.NET bug
