@@ -1,3 +1,10 @@
+kernel-simulator (0.0.24.1) jammy; urgency=medium
+
+  * You can't go back to 2018 on .NET 6.0!
+  * Meteor is customizable
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Tue, 02 Aug 2022 23:26:55 +0300
+
 kernel-simulator (0.0.24.0) jammy; urgency=medium
 
   * Added command autocompletion
