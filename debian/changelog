@@ -1,3 +1,27 @@
+kernel-simulator (0.0.24.0) jammy; urgency=medium
+
+  * Added command autocompletion
+  * Added new splashes (systemd, sysvinit, openrc,...)
+  * Added support for UESH conditions that require more than three arguments
+  * Added preview to saver settings
+  * Added new tests
+  * Added new screensavers (Indeterminate, Pulse,...)
+  * Added new languages (SMS Message, Shakespearean)
+  * Added new themes (Ports from VIM community themes)
+  * Added shell presets
+  * Added new UESH conditions
+  * Added RetroKS!
+  * UnitConv is back!
+  * No More POP3
+  * Removed obsolete Mod and Screensaver APIs
+  * Removed report bug prompt
+  * Fixed wrong character for lower left corner in Ramp when the config is being created
+  * General API improvements
+  * General improvements and bug fixes
+  * And more...
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Tue, 02 Aug 2022 08:35:25 +0300
+
 kernel-simulator (0.0.23.2) jammy; urgency=medium
 
   * Fixed dictionary defining only one meaning for words like `fine`
