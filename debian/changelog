@@ -1,3 +1,10 @@
+kernel-simulator (0.0.24.2) jammy; urgency=medium
+
+  * RetroKS can now be run in .NET 6.0
+  * RetroKS can now be run for the first time again
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Fri, 05 Aug 2022 19:14:24 +0300
+
 kernel-simulator (0.0.24.1) jammy; urgency=medium
 
   * You can't go back to 2018 on .NET 6.0!
