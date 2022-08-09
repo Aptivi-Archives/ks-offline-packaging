@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 #
-# ﻿   Kernel Simulator  Copyright (C) 2018-2022  EoflaOE
+#    Kernel Simulator  Copyright (C) 2018-2022  EoflaOE
 # 
 #    Kernel Simulator is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -35,7 +35,7 @@ binary:
 	mkdir -p debian/kernel-simulator/usr/lib/ks
 	mkdir -p debian/kernel-simulator/usr/share/applications
 	# Copy required files to their directories
-	cp -r "Kernel-Simulator/Kernel Simulator/KSBuild/." "debian/kernel-simulator/usr/lib/ks"
+	cp -r "Kernel-Simulator/Kernel Simulator/KSBuild/net48/." "debian/kernel-simulator/usr/lib/ks"
 	cp "Kernel-Simulator/Kernel Simulator/ks.sh" "debian/kernel-simulator/usr/bin/ks"
 	cp "Kernel-Simulator/Kernel Simulator/ks.1" "debian/ks.1"
 	cp "Kernel-Simulator/Kernel Simulator/ks.desktop" "debian/kernel-simulator/usr/share/applications/"
