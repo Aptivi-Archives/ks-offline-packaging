@@ -1,3 +1,9 @@
+kernel-simulator (0.0.24.3) jammy; urgency=medium
+
+  * Added boot class for GRILO
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Tue, 09 Aug 2022 11:35:20 +0300
+
 kernel-simulator (0.0.24.2) jammy; urgency=medium
 
   * RetroKS can now be run in .NET 6.0
