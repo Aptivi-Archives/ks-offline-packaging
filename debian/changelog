@@ -1,3 +1,9 @@
+kernel-simulator (0.0.24.4) jammy; urgency=medium
+
+  * Fixed false boot failure in GRILO
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Wed, 10 Aug 2022 07:27:55 +0300
+
 kernel-simulator (0.0.24.3-0ppa1) jammy; urgency=medium
 
   * Fixed net48 directory being added in lib
