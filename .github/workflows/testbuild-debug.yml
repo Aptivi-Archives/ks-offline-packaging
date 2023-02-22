@@ -14,12 +14,10 @@ jobs:
 
       - name: Install required packages
         run: |
-          sudo add-apt-repository ppa:eofla/msbuild
           sudo apt update
-          sudo apt purge mono-roslyn msbuild-sdkresolver msbuild-libhostfxr
-          sudo apt purge mono-*
+          sudo apt purge dotnet*
           sudo apt autoremove
-          sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev msbuild msbuild-roslyn mono-vbnc libmono-microsoft-visualbasic10.0-cil inxi libcpanel-json-xs-perl
+          sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev dotnet-sdk-6.0 devscripts debhelper-compat dput
         
       - name: Initialize offline package
         run: |
@@ -30,8 +28,8 @@ jobs:
       - name: Try to build
         run: |
           cd Kernel-Simulator
-          sudo ip netns exec no-net msbuild "Kernel Simulator.sln" -t:restore
-          sudo ip netns exec no-net msbuild "Kernel Simulator.sln" -p:Configuration=Release
+          sudo ip netns exec no-net msbuild Nitrocid.sln -t:restore
+          sudo ip netns exec no-net msbuild Nitrocid.sln -p:Configuration=Release
           
       - name: Setup tmate session for debug failure
         if: ${{ failure() }}

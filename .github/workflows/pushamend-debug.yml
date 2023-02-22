@@ -20,24 +20,22 @@ jobs:
 
       - name: Install required packages
         run: |
-          sudo add-apt-repository ppa:eofla/msbuild
           sudo apt update
-          sudo apt purge mono-roslyn msbuild-sdkresolver msbuild-libhostfxr
-          sudo apt purge mono-*
+          sudo apt purge dotnet*
           sudo apt autoremove
-          sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev msbuild msbuild-roslyn mono-vbnc libmono-microsoft-visualbasic10.0-cil inxi libcpanel-json-xs-perl devscripts debhelper-compat dput libmono-2.0-1 libmono-profiler mono-4.0-service
+          sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev dotnet-sdk-6.0 devscripts debhelper-compat dput
         
       - name: Download original source
         run: |
-          wget --output-document=../kernel-simulator_0.0.24.4.orig.tar.xz https://launchpad.net/~eofla/+archive/ubuntu/kernel-sim/+sourcefiles/kernel-simulator/0.0.24.4/kernel-simulator_0.0.24.4.orig.tar.xz
-          tar xf ../kernel-simulator_0.0.24.4.orig.tar.xz ./Kernel-Simulator
+          wget --output-document=../kernel-simulator_0.1.0-beta1.orig.tar.xz https://launchpad.net/~eofla/+archive/ubuntu/kernel-sim/+sourcefiles/kernel-simulator/0.1.0-beta1/kernel-simulator_0.1.0-beta1.orig.tar.xz
+          tar xf ../kernel-simulator_0.1.0-beta1.orig.tar.xz ./Kernel-Simulator
           mv .github ..
 
       - name: Build source package
         run: debuild -S
         
       - name: Push to Launchpad
-        run: dput ppa:eofla/kernel-sim ../kernel-simulator_0.0.24.4-0ppa1_source.changes
+        run: dput ppa:eofla/kernel-sim ../kernel-simulator_0.1.0-beta1-0ppa1_source.changes
           
       - name: Setup tmate session for debug failure
         if: ${{ failure() }}
