@@ -25,7 +25,7 @@ build:
 	mkdir debian/homedir
 	echo `pwd`"/debian/homedir"
 	HOME=`pwd`"/debian/homedir" dotnet restore "Kernel-Simulator/Nitrocid.sln"
-	dotnet msbuild "Kernel-Simulator/Nitrocid.sln" -p:Configuration=Release
+	dotnet msbuild "Kernel-Simulator/Nitrocid.sln"
 	# Remove unnecessary things generated (KS nupkgs)
 	IFS="|"; for f in `find -regex ".*\.+[^.]*\.+[^.]*\.+.*nupkg" | awk '{printf "%s|", $$0}'`; do rm $$f; done; IFS=" "
 
@@ -35,7 +35,7 @@ binary:
 	mkdir -p debian/kernel-simulator/usr/lib/ks
 	mkdir -p debian/kernel-simulator/usr/share/applications
 	# Copy required files to their directories
-	cp -r "Kernel-Simulator/public/Nitrocid/KSBuild/net48/." "debian/kernel-simulator/usr/lib/ks"
+	cp -r "Kernel-Simulator/public/Nitrocid/KSBuild/net6.0/." "debian/kernel-simulator/usr/lib/ks"
 	cp "Kernel-Simulator/public/Nitrocid/ks.sh" "debian/kernel-simulator/usr/bin/ks"
 	cp "Kernel-Simulator/public/Nitrocid/ks.1" "debian/ks.1"
 	cp "Kernel-Simulator/public/Nitrocid/ks.desktop" "debian/kernel-simulator/usr/share/applications/"
