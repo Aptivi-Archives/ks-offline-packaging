@@ -1,13 +1,13 @@
 #!/usr/bin/make -f
 #
-#    Kernel Simulator  Copyright (C) 2018-2022  EoflaOE
+#    Nitrocid KS  Copyright (C) 2018-2022  EoflaOE
 # 
-#    Kernel Simulator is free software: you can redistribute it and/or modify
+#    Nitrocid KS is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
 #    (at your option) any later version.
 #
-#    Kernel Simulator is distributed in the hope that it will be useful,
+#    Nitrocid KS is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
@@ -24,8 +24,8 @@ build:
 	# Restore every package from solution and build the app
 	mkdir debian/homedir
 	echo `pwd`"/debian/homedir"
-	HOME=`pwd`"/debian/homedir" msbuild "Kernel-Simulator/Kernel Simulator.sln" -t:restore
-	msbuild "Kernel-Simulator/Kernel Simulator.sln" -p:Configuration=Release
+	HOME=`pwd`"/debian/homedir" dotnet restore "Kernel-Simulator/Nitrocid.sln"
+	dotnet msbuild "Kernel-Simulator/Nitrocid.sln" -p:Configuration=Release
 	# Remove unnecessary things generated (KS nupkgs)
 	IFS="|"; for f in `find -regex ".*\.+[^.]*\.+[^.]*\.+.*nupkg" | awk '{printf "%s|", $$0}'`; do rm $$f; done; IFS=" "
 
@@ -35,18 +35,15 @@ binary:
 	mkdir -p debian/kernel-simulator/usr/lib/ks
 	mkdir -p debian/kernel-simulator/usr/share/applications
 	# Copy required files to their directories
-	cp -r "Kernel-Simulator/Kernel Simulator/KSBuild/net48/." "debian/kernel-simulator/usr/lib/ks"
-	cp "Kernel-Simulator/Kernel Simulator/ks.sh" "debian/kernel-simulator/usr/bin/ks"
-	cp "Kernel-Simulator/Kernel Simulator/ks.1" "debian/ks.1"
-	cp "Kernel-Simulator/Kernel Simulator/ks.desktop" "debian/kernel-simulator/usr/share/applications/"
-	cp "Kernel-Simulator/Kernel Simulator/ks-converter.sh" "debian/kernel-simulator/usr/bin/ks-converter"
-	cp "Kernel-Simulator/Kernel Simulator/ks-converter.1" "debian/ks-converter.1"
-	cp "Kernel-Simulator/Kernel Simulator/ks-jl.sh" "debian/kernel-simulator/usr/bin/ks-jl"
-	cp "Kernel-Simulator/Kernel Simulator/ks-jl.1" "debian/ks-jl.1"
-	cp "Kernel-Simulator/Kernel Simulator/OfficialAppIcon-KernelSimulator-256.png" "debian/kernel-simulator/usr/lib/ks/ks.png"
+	cp -r "Kernel-Simulator/public/Nitrocid/KSBuild/net48/." "debian/kernel-simulator/usr/lib/ks"
+	cp "Kernel-Simulator/public/Nitrocid/ks.sh" "debian/kernel-simulator/usr/bin/ks"
+	cp "Kernel-Simulator/public/Nitrocid/ks.1" "debian/ks.1"
+	cp "Kernel-Simulator/public/Nitrocid/ks.desktop" "debian/kernel-simulator/usr/share/applications/"
+	cp "Kernel-Simulator/public/Nitrocid/ks-jl.sh" "debian/kernel-simulator/usr/bin/ks-jl"
+	cp "Kernel-Simulator/public/Nitrocid/ks-jl.1" "debian/ks-jl.1"
+	cp "Kernel-Simulator/public/Nitrocid/OfficialAppIcon-KernelSimulator-256.png" "debian/kernel-simulator/usr/lib/ks/ks.png"
 	# Set up permissions
 	chmod 755 "debian/kernel-simulator/usr/bin/ks"
-	chmod 755 "debian/kernel-simulator/usr/bin/ks-converter"
 	chmod 755 "debian/kernel-simulator/usr/bin/ks-jl"
 	chmod -R 644 debian/kernel-simulator/usr/lib/ks/.
 	chmod 755 debian/kernel-simulator/usr/lib

@@ -1,4 +1,4 @@
 [submodule "Kernel-Simulator"]
 	path = Kernel-Simulator
-	url = https://github.com/EoflaOE/Kernel-Simulator.git
-	branch = servicing
+	url = https://github.com/Aptivi/NitrocidKS.git
+	branch = master

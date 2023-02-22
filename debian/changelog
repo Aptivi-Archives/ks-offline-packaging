@@ -1,3 +1,9 @@
+kernel-simulator (0.1.0-beta1) jammy; urgency=medium
+
+  * Synchronize release with changes in Nitrocid KS 0.1.0 Beta 1
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Wed, 22 Feb 2023 07:19:45 +0300
+
 kernel-simulator (0.0.24.4) jammy; urgency=medium
 
   * Fixed false boot failure in GRILO

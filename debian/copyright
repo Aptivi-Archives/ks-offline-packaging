@@ -1,9 +1,9 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: kernel-simulator
-Source: https://github.com/EoflaOE/Kernel-Simulator/blob/master/LICENSE
+Source: https://github.com/Aptivi/NitrocidKS/blob/master/LICENSE
 
 Files: *
-Copyright: 2018-2021 EoflaOE <eoflaoevicecity@gmail.com>
+Copyright: 2018-2023 Aptivi <eoflaoevicecity@gmail.com>
 License: GPL-3+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
