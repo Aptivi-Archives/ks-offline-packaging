@@ -25,7 +25,7 @@ build:
 	mkdir debian/homedir
 	echo `pwd`"/debian/homedir"
 	HOME=`pwd`"/debian/homedir" dotnet restore "Kernel-Simulator/Nitrocid.sln"
-	dotnet msbuild "Kernel-Simulator/Nitrocid.sln"
+	HOME=`pwd`"/debian/homedir" dotnet msbuild "Kernel-Simulator/Nitrocid.sln"
 	# Remove unnecessary things generated (KS nupkgs)
 	IFS="|"; for f in `find -regex ".*\.+[^.]*\.+[^.]*\.+.*nupkg" | awk '{printf "%s|", $$0}'`; do rm $$f; done; IFS=" "
 
