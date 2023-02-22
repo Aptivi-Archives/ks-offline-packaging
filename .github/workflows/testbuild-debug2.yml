@@ -31,6 +31,9 @@ jobs:
         
       - name: Try to build
         run: |
+          cd debian/patches
+          patch -u ../../Kernel-Simulator/public/Nitrocid/Kernel/KernelTools.cs -i 001-fix-namespaces.patch
+          cd ../..
           cd Kernel-Simulator
           sudo ip netns exec no-net dotnet restore Nitrocid.sln
           sudo ip netns exec no-net dotnet msbuild Nitrocid.sln -p:Configuration=Release
