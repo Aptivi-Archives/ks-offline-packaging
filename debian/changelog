@@ -1,3 +1,9 @@
+kernel-simulator (0.1.0-beta1-0ppa1) jammy; urgency=medium
+
+  * Synchronize release with changes in Nitrocid KS 0.1.0 Beta 1
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Wed, 22 Feb 2023 20:55:45 +0300
+
 kernel-simulator (0.1.0-beta1) jammy; urgency=medium
 
   * Synchronize release with changes in Nitrocid KS 0.1.0 Beta 1
