@@ -20,6 +20,7 @@ jobs:
 
       - name: Install required packages
         run: |
+          sudo rm /etc/apt/sources.list.d/microsoft-prod.list
           sudo apt update
           sudo apt purge dotnet*
           sudo apt autoremove
